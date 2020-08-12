@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Photo
+
 
 # Create your views here.
 from django.http import HttpResponse
@@ -15,3 +17,7 @@ def video(request):
 
 def photo(request):
   return render(request, 'photo.html')
+
+def image(request):
+    image_file = request.FILES['image_file'].file.read()
+    Photo.objects.create(image=image_file)
