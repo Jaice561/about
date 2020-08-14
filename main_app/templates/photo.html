@@ -24,14 +24,13 @@
 </header>
     
     <main class="container">
-        
-        
         <h1>My Photo</h1>
-        <img class="appPic" src="{% static 'images/first.png' %}">                    
-        <img class="appPic" src="{% static 'images/second.png' %}">                    
-        <img class="appPic" src="{% static 'images/third.png' %}">                    
-        <hr />
-        <p>What is good Photo!</p>
+        {% for pic in pics %}    
+        <div>        
+            <p class="photoParagraph">Name: {{ pic.img_name }}</p>        
+            <img src={{ MEDIA_URL }}{{ pic.img_src }}>    
+        </div>
+        {% endfor %}
   </main>
   <footer class="page-footer">
     <div class="right">All Rights Reserved, &copy; 2019 About &nbsp;</div>

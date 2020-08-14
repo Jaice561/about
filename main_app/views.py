@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import Photo
+from .models import Photo, Video
+# from .models import Photo
 
 
 # Create your views here.
@@ -12,12 +13,10 @@ def home(request):
 def about(request):
   return render(request, 'about.html')
 
-def video(request):
-  return render(request, 'video.html')
-
 def photo(request):
-  return render(request, 'photo.html')
+    pics = Photo.objects.all()    
+    return render(request, 'photo.html', {'pics':pics})
 
-def image(request):
-    image_file = request.FILES['image_file'].file.read()
-    Photo.objects.create(image=image_file)
+def video(request):
+    videos = Video.objects.all()    
+    return render(request, 'video.html', {'videos':videos})

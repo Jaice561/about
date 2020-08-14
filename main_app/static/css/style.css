@@ -7,6 +7,10 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+  a {
+    font-weight: bolder;
+  }
   
   footer.page-footer {
     padding-top: 0;
@@ -20,4 +24,9 @@ nav {
 
 .appPic {
   width: 50%;
+}
+
+.photoParagraph {
+  font-weight: bolder;
+  font-size: 25px;
 }
