@@ -1,10 +1,61 @@
-{% extends 'base.html' %}
-{% block content %}
-
-<h1>Home sweet Home</h1>
-<hr />
-<p>What is good!</p>
-<li><a href="/photo">My photo</a></li>
 
 
-{% endblock %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body class="home">
+  <header class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="/" class="left brand-logo">&nbsp;&nbsp;HOME</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="/photo">Photos</a></li>
+          <li><a href="/project">My Projects</a></li>
+          <li><a href="/video">Videos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="about">About Me</h1>
+    <hr />
+    <p class="summary">My name is Jameson Exil, but my friend call me J-mo and some call me J-mo the kid. I was born in Haiti august 25th 1995, but
+        after my mom passed away when I was 10 years old, my father who was living in the United State at the time decided it was a good 
+        idea to bring to the state as well.<br><br>
+
+    I play soccer through out middle school, high school and college. Now I play for a semi pro team name Sormercet fc.<br>
+    I went to Nichols college for my freshman years in 2015, and now I'm finishing my bachelor degree at Keiser University.<br>
+    I major in accounting and I'm also a software engineer. This year I obtain two software engineer certification at general assembly 
+    with my accounting associate degree. Now I'm on track to finish my bachelor in a little over a year.<br><br>
+
+    The first software engineer course I complete was a front-end course. I learned about: <br>
+    HTML, JavaScript, CSS, and JQuery.<br>
+    And the second course I complete was both fron-end and back-end. I learn varias technology and programming languages<br>
+    The technology and programing languages I learn are,<br>
+    ● JavaScript/Python ● HTML/CSS ● Django ● Zoom ● Customer Service ● Organization 
+    ● Communication ● AWS -In Progress
+    ● Node.js/Express.js ● Time Management
+    ● React ● Git/Github ● Working Remotely
+</p>
+    <hr />
+    <a class="link" href="/photo">Click here if you would like to see some pictures</a>
+  </main>
+  <footer class="page-footer">
+    <div class="right">All Rights Reserved, &copy; 2019 About &nbsp;</div>
+  </footer>
+</body>
+</html>
+
+
+

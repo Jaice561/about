@@ -30,3 +30,34 @@ nav {
   font-weight: bolder;
   font-size: 25px;
 }
+
+.pic {
+  width: 50%;
+  /* height: 300px; */
+}
+
+.picName{
+  display: flex; 
+}
+
+.home {
+  background-image: url("frontPage.jpg");
+}
+
+.about {
+  color: white;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.summary {
+  color: white;
+}
+
+.link {
+  color:white;
+}
+/* 
+.video {
+  background-image: url("video.jpg");
+} */

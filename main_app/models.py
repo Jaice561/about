@@ -2,6 +2,8 @@ from django.db import models
 
 # Create your models here.
 
+# class About(models.Model):
+#     about = models.TextField(max_length=250)
 
 class Photo(models.Model):    
     img_name = models.CharField(max_length=300)    

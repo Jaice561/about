@@ -1,4 +1,6 @@
 {% load static %}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,26 +20,19 @@
         <ul class="right">
           <li><a href="/photo">Photos</a></li>
           <li><a href="/project">My Projects</a></li>
-          <li><a href="/video">Video</a></li>
+          <li><a href="/video">Videos</a></li>
         </ul>
       </div>
     </nav>
-</header>
-    
-    <main class="container">
-        {% for pic in pics %}    
-        <div class="picture">   
-            <div class="name">
-            <p class="photoParagraph">{{ pic.img_name }}</p>   
-            <img class="pic" src={{ MEDIA_URL }}{{ pic.img_src }}>   
-            </div> 
-        </div>
-        {% endfor %}
+  </header>
+  <main class="container">
+    <h1>My projects</h1>
+    <hr />
+    <p>My name is Jameson Exil, I was born in Haiti august 25th 1995</p>
   </main>
   <footer class="page-footer">
     <div class="right">All Rights Reserved, &copy; 2019 About &nbsp;</div>
   </footer>
-
 </body>
 </html>
 
